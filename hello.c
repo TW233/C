@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-int main(void)
+int main(int argc, char *argv[])
 {
-    printf("Hello world\n");
+    if (argc == 2)
+        printf("Hello, %s", argv[1]);
+    else
+        printf("Missing command line!");
 }
